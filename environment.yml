@@ -1,0 +1,16 @@
+name: cifar_env
+channels:
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+  - https://repo.anaconda.com/pkgs/msys2
+dependencies:
+  - python=3.10
+  - matplotlib
+  - numpy
+  - pandas
+  - pytorch
+  - scikit-learn
+  - torchvision
+  - ipykernel
+prefix: C:\Users\Admin\anaconda3\envs\cifar_env

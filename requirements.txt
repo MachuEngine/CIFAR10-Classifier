@@ -1,0 +1,7 @@
+matplotlib==3.9.2
+mkl-service==2.4.0
+ply==3.11
+PyQt5==5.15.10
+pywin32==307
+torch==2.5.1
+torchvision==0.20.1
