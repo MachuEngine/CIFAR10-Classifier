@@ -1,30 +1,30 @@
-# 📊 Model Training Report
+# 분류 모델 성능 분석
 
-A comprehensive overview of the classification model training process, results, and analysis. This repository includes training logs, visualizations, and insights.
-
----
-
-## 🚀 Project Overview
-
-이 프로젝트는 입력 데이터를 활용해 결과를 예측하는 분류 모델을 학습하는 내용입니다. 학습 결과는 정확도가 지속적으로 증가하고 손실 값이 감소하는 안정적인 학습 과정을 보여줍니다.
+CIFAR10 데이터셋에 대한 분류 모델 학습 프로젝트
 
 ---
 
-## 📋 Training Details
+## 🚀 개요
 
-- **Framework**: PyTorch
-- **Optimizer**: Adam
-- **Loss Function**: CrossEntropyLoss
-- **Learning Rate**: 0.001
-- **Epochs**: 10
-- **Metrics**: Accuracy, Loss
-- **Data Split**: Training and validation sets
+주어진 데이터를 바탕으로 특정 결과를 예측하는 딥러닝 기반의 분류 모델을 개발하는 것을 목표로 했습니다. 학습 과정 내내 정확도는 꾸준히 향상되었고, 손실 값은 안정적으로 감소하는 모습을 보여 성공적으로 모델을 학습시킬 수 있었습니다.
 
 ---
 
-## 📈 Results
+## 📋 학습 환경 및 설정
 
-### Training Metrics
+- 프레임워크: PyTorch
+- 최적화 도구 (Optimizer): Adam
+- 손실 함수 (Loss Function): CrossEntropyLoss
+- 학습률 (Learning Rate): 0.001
+- 에포크 (Epochs): 10
+- 평가 지표: 정확도 (Accuracy), 손실 (Loss)
+- 데이터셋: 학습(Training) 데이터와 검증(Validation) 데이터 분리
+
+---
+
+## 📈 학습 결과
+
+### 학습 결과 표
 | Epoch | Train Loss | Train Accuracy | Validation Loss | Validation Accuracy |
 |-------|------------|----------------|-----------------|---------------------|
 | 1     | 1.4599     | 46.89%         | 1.1647          | 58.52%              |
@@ -35,12 +35,14 @@ A comprehensive overview of the classification model training process, results, 
 
 ### Accuracy and Loss Trends
 #### Accuracy
-- **Training Accuracy** steadily improved, reaching **76.01%** by the final epoch.
-- **Validation Accuracy** followed a similar trend, stabilizing at **78.46%**, indicating strong generalization.
+- 학습 정확도는 Epoch마다 상승하여 최종 Epoch에선 **76.01%**를 달성했습니다.
+- 검증 정확도 또한 비슷한 추세로, **78.46%**에 도달했습니다.
+- 모델이 특정 데이터에 과적합되지 않고, 새로운 데이터에도 잘 일반화될 수 있음 확인할 수 있었습니다.
 
 #### Loss
-- **Training Loss** decreased consistently, reaching **0.6959**.
-- **Validation Loss** mirrored this trend, ending at **0.6126**, showing effective learning without overfitting.
+- 학습 손실은 지속적으로 감소하며 0.6959까지 낮아졌습니다.
+- 검증 손실도 마찬가지로 감소하여 0.6126으로 낮아졌습니다.
+- 모델이 안정적으로 학습을 확인할 수 있었습니다.
 
 #### Training VS Validation
 ![Plot](./outputs/output.png)
